@@ -9,7 +9,7 @@
             "type": "msedge",
             "request": "launch",
             "name": "Open mywebsite.html",
-            "file": "d:\\vs code root files\\debuggers\\mywebsite.html"
+            "file": "d:\\vs code root files\\my webpages\\mywebsite.html"
         }
     ]
 }

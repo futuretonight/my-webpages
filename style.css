@@ -1,16 +1,22 @@
-
+/*css file of mywebsite.html*/
+/*--this code is attached to <h>--*/
   h1 {
     color: rgb(255, 255, 255);
   }
+  h3 {
+    color: aquamarine;
+  animation: alternate;
+}
+/*--<h> code ends here--*/
+
+/*-- <p> code starts here--*/
   p {
     color:cornsilk;
     animation:forwards;
   }
-  h3 {
-      color: aquamarine;
-    animation: alternate;
-  }
- 
+  /*--<p> code ends here--*/
+  
+  /*--this code is attached to <pre> block--*/
   pre {
     animation: infinite;
     animation-fill-mode: initial;
@@ -19,7 +25,136 @@
     border-color: azure;
     color: red;
   }
+  /*--<pre> block's code ends here--*/
+
+  /*--<address> block's code starts here--*/
   address {
     font-style: italic;
     color:azure;
   }
+  /*--<address> code ends here--*/
+
+  /*--this code is commited to the behaviour of buttons in the page--*/
+  /*this button's code is in beta stage */
+  .button {
+    position: relative;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    outline: none;
+    padding: 0;
+    display: block;
+    color: #000000;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  /*--the button code ends here--*/
+
+  /*--this css code here controls how a clickable link gonna behave--*/
+   /*the unclicked link will be seen in green color*/
+  a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+    /*the visited link will be seen in pink color*/
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  /* the link will be turned to red color when a mouse hovers on it*/
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  /*the color of link changes to yellow when its active*/
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  /*--link's code ends here--*/
+
+  /*--glowing buttons code below--*/
+  @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+button{
+  position: relative;
+  height: 60px;
+  width: 200px;
+  margin: 0 35px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background: #111;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+/*this adds gradient to first button*/
+button:first-child:hover{
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+}
+/*this adds gradient to 2nd button*/
+button:nth-child(2):hover{
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+}
+/*this adds gradient to 3rd button*/
+button:nth-child(3):hover{
+  background: linear-gradient(90deg, #fa7199, #f5ce62, #e43603, #fa7199);
+  background-size: 400%;
+}
+/*adds gradient to 4th button*/
+button:last-child:hover{
+  background: linear-gradient(45deg, #fa7199, #f5ce62, #e43603, #fa7199);
+  background-size: 400%;
+}
+button:first-child:before,
+button:last-child:before{
+  content: '';
+  position: absolute;
+  background: inherit;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  border-radius: 50px;
+  filter: blur(20px);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+button:first-child:hover:before,
+button:last-child:hover:before{
+  opacity: 1;
+  z-index: -1;
+}
+button:hover{
+  z-index: 1;
+  animation: glow 8s linear infinite;
+}
+@keyframes glow {
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 400%;
+  }
+}
+/*--ends here--*/
