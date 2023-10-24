@@ -1,0 +1,25 @@
+
+  h1 {
+    color: rgb(255, 255, 255);
+  }
+  p {
+    color:cornsilk;
+    animation:forwards;
+  }
+  h3 {
+      color: aquamarine;
+    animation: alternate;
+  }
+ 
+  pre {
+    animation: infinite;
+    animation-fill-mode: initial;
+    animation-duration: 5s;
+    animation-name: test;
+    border-color: azure;
+    color: red;
+  }
+  address {
+    font-style: italic;
+    color:azure;
+  }
