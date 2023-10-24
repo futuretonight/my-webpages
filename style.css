@@ -108,25 +108,33 @@ button{
 }
 /*this adds gradient to first button*/
 button:first-child:hover{
-  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background: linear-gradient(45deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
   background-size: 400%;
 }
 /*this adds gradient to 2nd button*/
 button:nth-child(2):hover{
-  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background: linear-gradient(45deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
   background-size: 400%;
 }
 /*this adds gradient to 3rd button*/
 button:nth-child(3):hover{
-  background: linear-gradient(90deg, #fa7199, #f5ce62, #e43603, #fa7199);
+  background: linear-gradient(45deg, #fa7199, #f5ce62, #e43603, #fa7199);
   background-size: 400%;
 }
+/*adds gradient to test button*
+button:nth-child(n):hover{
+  background: linear-gradient(45deg, #fa7199, #f5ce62, #e43603, #fa7199);
+  background-size: 400%;
+}
+                        this button has been drafted              /
 /*adds gradient to 4th button*/
 button:last-child:hover{
   background: linear-gradient(45deg, #fa7199, #f5ce62, #e43603, #fa7199);
   background-size: 400%;
 }
 button:first-child:before,
+button:nth-child(2):hover:before,
+button:nth-child(3):hover:before,
 button:last-child:before{
   content: '';
   position: absolute;
@@ -136,11 +144,13 @@ button:last-child:before{
   bottom: -5px;
   left: -5px;
   border-radius: 50px;
-  filter: blur(20px);
+  filter: blur(10px);
   opacity: 0;
   transition: opacity 0.5s;
 }
 button:first-child:hover:before,
+button:nth-child(2):hover:before,
+button:nth-child(3):hover:before,
 button:last-child:hover:before{
   opacity: 1;
   z-index: -1;
