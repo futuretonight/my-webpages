@@ -8,7 +8,7 @@
         {
             "type": "msedge",
             "request": "launch",
-            "name": "Open mywebsite.html",
+            "name": "Open index.html",
             "file": "d:\\vs code root files\\my webpages\\index.html"
         }
     ]
