@@ -9,6 +9,34 @@
 }
 /*--<h> code ends here--*/
 
+/*server-box code below*/
+.server-box {
+  width: 350px;
+  height: 215px;
+  background-color: #000000; /* Background color */
+  border: 1px solid #b90a0a; /* Border color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a floating effect */
+  border-radius: 10px; /* Border radius for rounded corners */
+  padding: 10px; /* Padding inside the box */
+  margin: 20px;
+}
+
+/* Styling for the text */
+.server-box p {
+  margin: 0; /* Remove default margin for the paragraph */
+}
+
+body {
+  background: linear-gradient(60deg, #FFC700, #FF00D6, #00FFFF);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 /*-- <p> code starts here--*/
   p {
     color:cornsilk;
@@ -23,7 +51,7 @@
     animation-duration: 5s;
     animation-name: test;
     border-color: azure;
-    color: red;
+    color: rgb(0, 255, 34);
   }
   /*--<pre> block's code ends here--*/
 
@@ -104,7 +132,7 @@ button{
   letter-spacing: 2px;
   text-transform: uppercase;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: 1s;
 }
 /*this adds gradient to first button*/
 button:first-child:hover{
