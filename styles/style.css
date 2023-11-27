@@ -9,6 +9,26 @@
 }
 /*--<h> code ends here--*/
 
+<<<<<<< HEAD
+=======
+/*server-box code below*/
+.server-box {
+  width: 350px;
+  height: 215px;
+  background-color: #000000; /* Background color */
+  border: 1px solid #b90a0a; /* Border color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a floating effect */
+  border-radius: 10px; /* Border radius for rounded corners */
+  padding: 10px; /* Padding inside the box */
+  margin: 20px;
+}
+
+/* Styling for the text */
+.server-box p {
+  margin: 0; /* Remove default margin for the paragraph */
+}
+
+>>>>>>> cfa929afa91324329ea39e082b1c37bc4c3d066e
 body {
   background: linear-gradient(60deg, #FFC700, #FF00D6, #00FFFF);
   background-size: 400% 400%;
@@ -115,7 +135,7 @@ button{
   letter-spacing: 2px;
   text-transform: uppercase;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: 1s;
 }
 /*this adds gradient to first button*/
 button:first-child:hover{
@@ -178,6 +198,7 @@ button:hover{
     background-position: 400%;
   }
 }
+<<<<<<< HEAD
 /*loading screen's code*/
 
  TEMPLATE
@@ -295,4 +316,6 @@ body {
 
 @keyframes fade-in { 0% { opacity: 0;} 100% { opacity: 1;}}
 
+=======
+>>>>>>> cfa929afa91324329ea39e082b1c37bc4c3d066e
 /*--ends here--*/
