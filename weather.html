@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta property="og:description" content="Functional Weather webpage by Yajath Krushna">
+    <meta property="og:title" content="Weather">
+    <link rel="ico" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/weather_stylez.css">
+    <!--the scripts of weather html below-->
+    <script src="https://kit.fontawesome.com/515ba6921a.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src=".vscode/weather_script.js"></script>
+<script>
+  function searchWeather() {
+    var location = document.getElementById("locationInput").value;
+    // Use the location value in your weather API request
+    // Fetch weather data and display it on the webpage
+  }
+</script>
+    <!--div class for background-->
+    <title>Weather</title>
+</head>
+<body>
+      <div class="card">
+        <div class="search">
+        <input type="text" placeholder="Enter location" id="locationInput">
+        <button onclick="searchWeather()"><i class="fa-solid fa-magnifying-glass"> Search</button></i>
+
+        <button onclick="window.location.href='test weather.html'"><i class="fa-solid fa-cloud"></i> Weather</button>
+        <!--test code-->
+       
+        <div class="weather-body">
+            
+        </div>
+    </div>
+        <!---->
+        <div id="weatherData"></div>
+      </div>
+      <div icon="sunny" data-label="Sunny">
+        <span class="sun"></span>
+      </div>
+      
+      <div icon="cloudy" data-label="Perfect">
+        <span class="cloud"></span>
+        <span class="cloud"></span>
+      </div>
+      
+      <div icon="snowy" data-label="Chilly">
+        <span class="snowman"></span>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      
+      <div icon="stormy" data-label="Soggy">
+        <span class="cloud"></span>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      
+      <div icon="supermoon" data-label="Cool!">
+        <span class="moon"></span>
+        <span class="meteor"></span>
+      </div>
+      <div class="weather">
+        <div class="city">
+            <button onclick="window.location.href='weather test 2.html'"><i class="fa-solid fa-cloud"></i> Weather</button>
+      <!--test code-->
+</body>
+</html>

@@ -1,0 +1,35 @@
+body {
+    background: linear-gradient(60deg darkblue, rgb(43, 7, 141) , rgb(35, 12, 170), maroon, black,);
+    background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+  /*the stars animated background code ends here*/
+
+  /*the weather UI*/
+  .weather-container {
+    text-align: center;
+    margin-top: 50px;
+  
+    input[type="text"] {
+      padding: 10px;
+      width: 200px;
+    }
+  
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  
+  #weatherData {
+    margin-top: 20px;
+  }
